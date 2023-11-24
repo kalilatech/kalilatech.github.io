@@ -1,9 +1,25 @@
 <html>
-  <head>
-    <title>KALILA TECHNOLOGY</title>
-  </head>
-  <body>
-    <h1>KALILA TECHNOLOGY</h1>
-    <h2>simple & usable</h2>
-  </body>
+	<head>
+		<title>DKRIUK FRIED CHICKEN</title>
+		<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	</head>
+	<body>
+		<div id="root"></div>
+
+		<script type="text/babel">
+			const container = document.getElementById('root');
+			const root = ReactDOM.createRoot(container);
+			root.render(
+					<>
+						<center>
+						<h1 className="heading">DKRIUK FRIED CHICKEN 🍗</h1>
+						<img src="img.jpg" width="80" alt="My Image" />
+						<p onClick={e => {alert('Ayam Goreng!')}}>Jagonya Kriuk, Asli Indonesia!</p>
+						</center>
+					</>
+				);
+		</script>
+	</body>
 </html>
